@@ -1,13 +1,34 @@
-@extends('layouts.app')
+<!Doctype HTML>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registro</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script src="js/vendor/modernizr.js"></script>
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+</head>
+@include ('templates/navbar')
+<body>        <!-- Nav Bar -->
+<div class="container marketing" name="cursos">
+           
+                <div class="row featurette">
+                
+
+
+
+
+<form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -61,8 +82,28 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
+                
+                
+                <hr class="featurette-divider">
+                
+                </hr class="featurette-divider">
+                <footer>
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </footer>
 </div>
-@endsection
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
