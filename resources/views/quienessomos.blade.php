@@ -22,8 +22,7 @@
            
                 <div class="row featurette">
                     <div class="col-md-7 col-md-push-5">
-                        <h2 class="featurette-heading">Más de 1000 libros disponibles.</h2>
-                        <p class="lead">Disfruta de nuestra biblioteca, contamos con más de 1000 libros a tu disposición listos para ser descargados.</p>
+                        <h2 class="featurette-heading">Rómulo Mcginnis</h2>
                     </div>
                     <div class="col-md-5 col-md-pull-7">
                         <img class="img-circle" style="margin-left:100px; margin-top:50px" src="img/matematicas.jpg" alt="Generic placeholder image" width="250" height="250">
@@ -33,8 +32,7 @@
                 <hr class="featurette-divider">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">Solicita cursos personalizados de alto nivel*</h2>
-                        <p class="lead">¿Quieres un curso personalizado?¿Algún tema en específico que te gustaria dominar? Contactanos, tenemos a un grupo de profesionales que diseñaran un curso para ti.</p>
+                        <h2 class="featurette-heading">Luis Gerardo Alvarado</h2>
                     </div>
                     <div class="col-md-5">
                         <img class="img-circle" style="margin-left:100px; margin-top:50px" src="img/matematicas.jpg" alt="Generic placeholder image" width="250" height="250">
@@ -44,8 +42,7 @@
                 <hr class="featurette-divider">
                 <div class="row featurette">
                     <div class="col-md-7 col-md-push-5">
-                        <h2 class="featurette-heading">Más de 1000 libros disponibles.</h2>
-                        <p class="lead">Disfruta de nuestra biblioteca, contamos con más de 1000 libros a tu disposición listos para ser descargados.</p>
+                        <h2 class="featurette-heading">Esleban Xochitemol</h2>
                     </div>
                     <div class="col-md-5 col-md-pull-7">
                         <img class="img-circle" style="margin-left:100px; margin-top:50px" src="img/matematicas.jpg" alt="Generic placeholder image" width="250" height="250">
@@ -53,6 +50,16 @@
                 </div>
                 </hr class="featurette-divider">
                 <hr class="featurette-divider">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Jesús Oliver Rodríguez</h2>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="img-circle" style="margin-left:100px; margin-top:50px" src="img/matematicas.jpg" alt="Generic placeholder image" width="250" height="250">
+                    </div>
+                </div>
+                </hr class="featurette-divider">
                 
                 </hr class="featurette-divider">
                 <footer>

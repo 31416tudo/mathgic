@@ -23,21 +23,23 @@
           <ul class="nav navbar-nav js-nav-add-active-class">
             <li><a href="{{route('welcome')}}">Inicio</a></li>
             <li><a href="{{route('conocemas')}}" method="get">Quiénes Somos</a></li>
-            <li><a href="">Nuestro Compromiso</a></li>
+            
           </ul>
           <ul class="nav navbar-nav navbar-right js-nav-add-active-class">
-            <li><a href="{{route('login')}}">Iniciar Sesión</a></li>
+            @if(Auth::guest())
+            <li><a href="{{route('log-in')}}">Iniciar Sesión</a></li>
+             <a type="button" class="navbar-btn btn btn-gradient-blue" am-latosans="bold" href="{{route('registro')}}">Regístrate</a>
+            @else
+            <li><a href="{{route("curso")}}">Cursos</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicia Sesión<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}}<b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="press-release.html">Press Release</a></li>
+                <li><a href="{{route('curso')}}">Cursos</a></li>
+                <li><a href="#">Calificaciones</a></li>
+                <li><a href="{{route('logout')}}">Cerrar Sesión</a></li>
               </ul>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right hidden-xs">
-            <a type="button" class="navbar-btn btn btn-gradient-blue" am-latosans="bold" href="{{route('registro')}}">Regístrate</a>
+            @endif
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -46,5 +48,3 @@
      
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>	
